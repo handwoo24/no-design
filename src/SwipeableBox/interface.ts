@@ -6,6 +6,5 @@ export interface SwipeableBoxProps {
   toUpSwipe?: () => void;
   toDownSwipe?: () => void;
   threshold: number;
-  type?: "wheel" | "shot";
   children?: ReactNode;
 }
