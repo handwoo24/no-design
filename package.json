@@ -1,0 +1,37 @@
+{
+  "name": "simple-design",
+  "version": "1.0.0",
+  "description": "a simple designed component for react",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/handwoo24/simple-design.git"
+  },
+  "author": "handwoo24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/handwoo24/simple-design/issues"
+  },
+  "homepage": "https://github.com/handwoo24/simple-design#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.3"
+  }
+}
