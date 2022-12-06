@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 export interface SwipeableBoxProps {
   toLeftSwipe?: () => void;
@@ -7,4 +7,6 @@ export interface SwipeableBoxProps {
   toDownSwipe?: () => void;
   threshold: number;
   children?: ReactNode;
+  className?: string;
+  style?: CSSProperties;
 }

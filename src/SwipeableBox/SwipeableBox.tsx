@@ -11,6 +11,8 @@ export function SwipeableBox({
   toRightSwipe = () => undefined,
   toUpSwipe = () => undefined,
   children,
+  className,
+  style,
 }: SwipeableBoxProps): ReactElement {
   const drag = useDrag(({ type, movement: [mx, my] }) => {
     if (type === "pointerup") {
@@ -24,8 +26,10 @@ export function SwipeableBox({
     <animated.div
       {...drag()}
       style={{
+        ...style,
         touchAction: "none",
       }}
+      className={className}
     >
       {children}
     </animated.div>
