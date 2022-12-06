@@ -13,6 +13,7 @@ export function MonthBox({
   dayClassName,
   dayStyle,
   className,
+  current,
   style,
 }: MonthBoxProps): ReactElement {
   const startDay = useMemo(
@@ -26,6 +27,7 @@ export function MonthBox({
         const key = [year, month, "week", i].join("-");
         return (
           <WeekBox
+            current={current}
             key={key}
             year={year}
             month={month}

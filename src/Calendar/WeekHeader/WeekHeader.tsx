@@ -3,7 +3,7 @@ import type { WeekHeaderProps } from "./interface";
 import dayjs from "dayjs";
 import React, { useMemo } from "react";
 
-export function WeeekHeader({
+export function WeekHeader({
   className,
   style,
 }: WeekHeaderProps): ReactElement {

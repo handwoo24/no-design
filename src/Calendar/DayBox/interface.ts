@@ -8,4 +8,5 @@ export interface DayBoxProps {
   year: number;
   className?: string;
   style?: CSSProperties;
+  current: Dayjs;
 }

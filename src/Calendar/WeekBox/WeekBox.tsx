@@ -11,6 +11,7 @@ export function WeekBox({
   onChange,
   dayClassName,
   dayStyle,
+  current,
   className,
   style,
 }: WeekBoxProps): ReactElement {
@@ -31,6 +32,7 @@ export function WeekBox({
           <DayBox
             key={key}
             date={date}
+            current={current}
             year={year}
             month={dayMonth}
             onChange={onChange}
