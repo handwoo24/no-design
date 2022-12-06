@@ -8,4 +8,10 @@ export interface CalendarProps extends MonthBoxProps {
   weekHeaderStyle?: CSSProperties;
   labelClassName?: string;
   labelStyle?: CSSProperties;
+  leftArrowClassName?: string;
+  leftArrowStyle?: CSSProperties;
+  rightArrowClassName?: string;
+  rightArrowStyle?: CSSProperties;
+  headerClassName?: string;
+  headerStyle?: CSSProperties;
 }
