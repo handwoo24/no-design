@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { MonthBoxProps } from "./MonthBox";
 
 export interface CalendarProps extends MonthBoxProps {
@@ -12,6 +12,10 @@ export interface CalendarProps extends MonthBoxProps {
   leftArrowStyle?: CSSProperties;
   rightArrowClassName?: string;
   rightArrowStyle?: CSSProperties;
+  leftArrowIcon?: ReactNode;
+  rightArrowIcon?: ReactNode;
   headerClassName?: string;
   headerStyle?: CSSProperties;
+  className?: string;
+  style?: CSSProperties;
 }

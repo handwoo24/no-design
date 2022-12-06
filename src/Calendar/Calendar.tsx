@@ -16,18 +16,24 @@ export function Calendar({
   leftArrowStyle,
   rightArrowClassName,
   rightArrowStyle,
+  leftArrowIcon,
+  rightArrowIcon,
   current,
+  className,
+  style,
   ...res
 }: CalendarProps): ReactElement {
   const label = useMemo(() => current?.format("MMMM YYYY"), [current]);
   return (
     <div
+      className={className}
       style={{
         display: "flex",
         width: "100%",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        ...style,
       }}
     >
       <div
@@ -40,7 +46,7 @@ export function Calendar({
         }}
       >
         <Button className={leftArrowClassName} style={{ ...leftArrowStyle }}>
-          {"<"}
+          {leftArrowIcon}
         </Button>
         <div
           style={{ flex: 1, textAlign: "center", ...labelStyle }}
@@ -49,7 +55,7 @@ export function Calendar({
           {label}
         </div>
         <Button className={rightArrowClassName} style={{ ...rightArrowStyle }}>
-          {">"}
+          {rightArrowIcon}
         </Button>
       </div>
       <WeekHeader className={weekHeaderClassName} style={weekHeaderStyle} />
