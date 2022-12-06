@@ -12,7 +12,7 @@ export function Calendar({
   current,
   ...res
 }: CalendarProps): ReactElement {
-  const label = useMemo(() => current?.format("MM월 YYYY"), [current]);
+  const label = useMemo(() => current?.format("MMMM YYYY"), [current]);
   return (
     <div
       style={{
