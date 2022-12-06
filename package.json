@@ -1,7 +1,7 @@
 {
-  "name": "simple-design",
+  "name": "no-design",
   "version": "1.0.0",
-  "description": "a simple designed component for react",
+  "description": "a no designed component for react",
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/handwoo24/simple-design.git"
+    "url": "git+https://github.com/handwoo24/no-design.git"
   },
   "author": "handwoo24",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/handwoo24/simple-design/issues"
+    "url": "https://github.com/handwoo24/no-design/issues"
   },
-  "homepage": "https://github.com/handwoo24/simple-design#readme",
+  "homepage": "https://github.com/handwoo24/no-design#readme",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
